@@ -68,3 +68,35 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Introduction to React
+
+# Installation
+## [React] (https://reactjs.org/docs/create-a-new-react-app.html#create-react-app)
+## Extensions 
+### ES7+ React/Redux/React-Native snippets
+
+# Folder and File Structure
+
+# First React App - Hello World
+
+# Components
+## Class
+## Functional
+### Arrow function
+
+# JSX
+
+# [React router dom v6] (https://reactrouter.com/docs/en/v6/getting-started/overview)
+
+## Configuring the routes
+## Navigation
+
+# State
+## Class component
+## Functional component
+### Hooks
+#### useState
+
+# Props
+
