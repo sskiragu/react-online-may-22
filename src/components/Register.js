@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Register(){
+
+    const [firstname, setFirstname] = useState("John")
+    const [lastname, setLastname] = useState("Doe")
     return(
         <div>
-            <h1>Register here.</h1>
+            <h1>Register here - using Functional component.</h1>
             <form>
 
                 <div>
@@ -23,6 +27,9 @@ function Register(){
                 </div>
             </form>
             <p><Link to='/'>Login</Link></p>
+
+            <p>{firstname}</p>
+            <p>{lastname}</p>
         </div>
     )
 }

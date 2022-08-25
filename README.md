@@ -93,9 +93,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## Navigation
 
 # State
-## Class component
+## [Class component] (https://reactjs.org/docs/state-and-lifecycle.html)
 ## Functional component
-### Hooks
+### [Hooks] (https://reactjs.org/docs/hooks-faq.html)
 #### useState
 
 # Props
