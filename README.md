@@ -99,4 +99,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 #### [useState] (https://reactjs.org/docs/hooks-state.html)
 
 # Props
+## Passing data from parent to child component
 
