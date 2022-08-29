@@ -11,6 +11,7 @@ function NavBar() {
         <Link to=''>Contact us</Link>
         <Link to='/login'>Login</Link>
         <Link to='/register'>Register</Link>
+        <Link to='/counter'>Counter</Link>
     </div>
   )
 }

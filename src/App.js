@@ -4,6 +4,7 @@ import Login from './components/Login';
 import NavBar from './components/NavBar';
 import Register from './components/Register';
 // import SignUp from './components/SignUp';
+import Counter from './components/Counter'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
             <Routes>
               <Route path='/login' element={<Login />}/>
               <Route path='/register' element={<Register />}/>
+              <Route path='/counter' element={<Counter />}/>
             </Routes>
           </BrowserRouter>
         </div>
