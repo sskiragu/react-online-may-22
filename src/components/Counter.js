@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Counter(props) {
+function Counter({username}) {
 
     const [count, setCount] = useState(0)
 
@@ -12,7 +12,7 @@ function Counter(props) {
         <h1>Counter App using Functional Componet - useState hook</h1>
         <p>{count}</p>
         <button onClick={increaseCount}>Increase Counter</button>
-        <p>{props.username}</p>
+        <p>{username}</p>
     </div>
   )
 }
