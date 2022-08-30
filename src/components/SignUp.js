@@ -7,41 +7,56 @@ export default class SignUp extends Component {
         super()
 
         this.state = {
-            firstname: "John",
-            lastname: "Doe"
+            username: 'sam',
+            email: 'sam@gmail.com',
+            password: '123'
         }
 
+    }
+
+    handleUsernameChange = (event) => {
+        this.setState({username: event.target.value})
+    }
+
+    handleEmailChange = (event) => {
+        
+    }
+
+    handlePasswordChange = (event) => {
+
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault()
+        console.log("You clicked submit button");
+        console.log(this.state.username);
     }
 
   render() {
     return (
         <div>
         <h1>Register here - using class component.</h1>
-        <form>
+        <form onSubmit={this.handleSubmit}>
 
             <div>
-                <input type='text'  placeholder='Enter username'/>
+                <input type='text' value={this.state.username} onChange={this.handleUsernameChange} placeholder='Enter username'/>
             </div>
 
             <div>
-                <input type='email'  placeholder='Enter email'/>
+                <input type='email' value={this.state.email} onChange={this.handleEmailChange} placeholder='Enter email'/>
             </div>
 
             <div>
-                <input type='password'  placeholder='Enter password'/>
+                <input type='password' value={this.state.password} onChange={this.handlePasswordChange} placeholder='Enter password'/>
             </div>
 
             <div>
-                <button type='button'>Register</button>
+                <button type='submit'>Register</button>
             </div>
         </form>
         <p><Link to='/'>Login</Link></p>
 
-        <p> 1 + 1 </p>
-
-        <p>{1 + 1}</p>
-        <p>{this.state.firstname}</p>
-        <p>{this.state.lastname}</p>
+        <h1>{this.state.username}</h1>
     </div>
 
     )

@@ -101,3 +101,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # Props
 ## Passing data from parent to child component
 
+# React Form
+
+# Conditional rendering
+# Consume an API
+## Hook
+### useEffect
+
