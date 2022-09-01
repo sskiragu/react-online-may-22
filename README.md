@@ -104,7 +104,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # React Form
 
 # Conditional rendering
+ ## if...else
+ ### if...else if...else
+ ## ternary operator
 # Consume an API
 ## Hook
 ### useEffect
+
+# More Hooks
+## useState, useEffect, useContext
 
