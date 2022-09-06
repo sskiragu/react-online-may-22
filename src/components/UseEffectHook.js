@@ -1,19 +1,37 @@
 import React, { useEffect, useState } from 'react'
 
- const UseEffectHook = () => {
+const UseEffectHook = () => {
 
-    const [count, setCount] = useState(0)
     const [data, setData] = useState([])
 
     useEffect(() => {
-        console.log("Inside the use Effect");
-    },[data, count])
+        fetch('https://jsonplaceholder.typicode.com/todos/')
+        .then(response => response.json())
+        .then(json => setData(json))
+    }, [])
+
+    const listItems = data.map(function(item){
+        return(
+            <tbody>
+                <tr>
+                    <td>{item.id}</td>
+                    <td>{item.title}</td>
+                </tr>
+            </tbody>
+        )
+    })
 
   return (
     <div>
-        <h1>Use Effect Hook Example</h1>
-        <p>{count}</p>
-        <button onClick={() => setCount(count + 1)}>Click me</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            {listItems}
+        </table>
     </div>
   )
 }
