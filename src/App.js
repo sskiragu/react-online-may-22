@@ -9,6 +9,7 @@ import COnderingRendUsingIf from './components/COnderingRendUsingIf';
 import CondationalRendUsingTerOper from './components/CondationalRendUsingTerOper';
 import CondationalRendUsingLogicalAnd from './components/CondationalRendUsingLogicalAnd';
 import UseEffectHook from './components/UseEffectHook';
+import FetchDataAxios from './components/FetchDataAxios';
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
               <Route path='/ternarycondition' element={<CondationalRendUsingTerOper />}/>
               <Route path='/logicaland' element={<CondationalRendUsingLogicalAnd />}/>
               <Route path='/useeffecthook' element={<UseEffectHook />}/>
+              <Route path='/fetchdata' element={<FetchDataAxios />}/>
             </Routes>
           </BrowserRouter>
         </div>

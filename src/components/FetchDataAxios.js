@@ -1,33 +1,38 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
-const UseEffectHook = () => {
+const  FetchDataAxios = () => {
 
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/todos/')
-        .then(response => response.json())
-        .then(json => setData(json))
-    }, [])
+        fetchData()
+    },[])
 
-    const listItems = data.map(function(item){
+    const fetchData = async () => {
+        const response = await axios.get('https://jsonplaceholder.typicode.com/posts')
+        setData(response.data);
+    }
+
+    const listItems = data.map((item) => {
         return(
             <tbody key={item.id}>
                 <tr>
                     <td>{item.id}</td>
-                    <td>{item.title}</td>
+                    <td>{item.body}</td>
                 </tr>
             </tbody>
         )
     })
-
+    
   return (
     <div>
+        <h1>Fetch Data using Axios</h1>
         <table>
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Title</th>
+                    <th>Body</th>
                 </tr>
             </thead>
             {listItems}
@@ -36,4 +41,4 @@ const UseEffectHook = () => {
   )
 }
 
-export default UseEffectHook
+export default FetchDataAxios

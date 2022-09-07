@@ -107,7 +107,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
  ## if...else
  ### if...else if...else
  ## ternary operator
-# Consume an API
+# Consume an 
+## fetch
+## [axios] (https://axios-http.com/docs/intro)
 ## Hook
 ### useEffect
 
